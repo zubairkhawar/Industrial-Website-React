@@ -1,0 +1,24 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root{
+  --primary-light: #FFFFFF;
+  --primary-dark: #181415;
+  --primary-orange: #FE5E15;
+  --secondary-orange: #FF781D;
+}
+
+@layer base{
+  html{
+    @apply scroll-smooth
+  }
+
+  body{
+    @apply font-[Roboto]
+  }
+  
+  button{
+    @apply px-4 py-2 border bg-gradient-to-r from-[var(--primary-orange)] to-[var(--secondary-orange)] text-white
+  }
+}
