@@ -2,6 +2,7 @@ import React from 'react';
 import TopBar from './TopBar';
 import NavBar from './NavBar';
 import Divider from '@mui/material/Divider';
+import Footer from './Footer';
 
 const Hero = () => {
     const style = {
@@ -36,6 +37,7 @@ const Hero = () => {
                     <button className='mt-8 py-2 border bg-gradient-to-r from-[var(--primary-orange)] to-[var(--secondary-orange)] text-white text-lg '>Learn More {'>>'}</button>
                 </div>
             </div>
+            
         </div>
     );
 };
