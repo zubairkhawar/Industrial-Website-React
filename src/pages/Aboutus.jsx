@@ -103,7 +103,9 @@ const Aboutus = () => {
                     </div>
                 )}
         </nav>
+        
 
+        {/* Breadcrumb */}
         <section>
         <div className='relative w-full h-[600px] bg-cover '>
                 <img src='bg-hero.jpeg' alt='Background' className='w-full h-full object-cover' />

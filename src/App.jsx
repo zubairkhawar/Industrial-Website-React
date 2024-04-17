@@ -7,8 +7,6 @@ import Divider from '@mui/material/Divider';
 import Footer from './components/Footer';
 import Contact from './pages/Contact';
 import Aboutus from './pages/Aboutus';
-import MeetTeam from './components/MeetTeam'
-import Workers from './components/Workers';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -26,7 +24,7 @@ function App() {
   return (
     <>
       <TopBar />
-      <Aboutus />
+      <Contact />
       <Footer />
     </>
   );

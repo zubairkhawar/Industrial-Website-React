@@ -106,7 +106,7 @@ const Contact = () => {
                 <div className='absolute top-0 left-0 w-full h-full bg-black opacity-60'></div>
 
                 {/* Content */}
-                <div className='absolute top-1/2 right-2/4 transform -translate-y-1/2 text-left font-roboto text-cream z-10 pl-5 lg:pl-0'>
+                <div className='absolute top-1/2 lg:right-2/4 transform -translate-y-1/2 text-left font-roboto text-cream z-10 pl-5 lg:pl-0'>
                     <h1 className='text-4xl lg:text-8xl mb-4 font-sans font-bold' >
                     Contact Us
                     </h1>
