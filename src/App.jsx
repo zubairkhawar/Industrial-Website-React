@@ -9,6 +9,8 @@ import Contact from './pages/Contact';
 import Aboutus from './pages/Aboutus';
 import Home from './pages/Home';
 import Products from './pages/Products'
+import CoatedAbrasives from './pages/CoatedAbrasives';
+import DiamondBlades from './pages/DiamondBlades';
 
 function App() {
   
@@ -21,6 +23,8 @@ function App() {
         <Route path="/contactus" element={<Contact />} />
         <Route path="/products" element={<Products />} />
         <Route path="/blog" element={<Products />} />
+        <Route path="/coatedabrasives" element={<CoatedAbrasives />} />
+        <Route path="/diamondcuttingblades" element={<DiamondBlades />} />
       </Routes>
     </Router>
   );
