@@ -3,7 +3,6 @@ import Search from '@mui/icons-material/Search';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import Breadcrumb from '../components/Breadcrumb';
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 import ArrowForwardIosOutlined from '@mui/icons-material/ArrowForwardIosOutlined';
 
@@ -30,19 +29,35 @@ const Contact = () => {
                     <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                         <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                             <li>
-                                <a href="#" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:text-[#FE5E15] hover:underline lg:border-0 lg:hover:text-primary-700 lg:p-0">Home</a>
+                                <a href="/" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:text-[#FE5E15] hover:underline lg:border-0 lg:hover:text-primary-700 lg:p-0">Home</a>
                             </li>
                             <li>
-                                <a href="#" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:text-[#FE5E15] hover:underline lg:border-0 lg:hover:text-primary-700 lg:p-0">About Us</a>
+                                <a href="/aboutus" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:text-[#FE5E15] hover:underline lg:border-0 lg:hover:text-primary-700 lg:p-0">About Us</a>
                             </li>
                             <li>
-                                <a href="#" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:text-[#FE5E15] hover:underline lg:border-0 lg:hover:text-primary-700 lg:p-0">Products</a>
+                                <a href="#" data-dropdown-toggle="dropdown" className=" py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:text-[#FE5E15] hover:underline lg:border-0 lg:hover:text-primary-700 lg:p-0 inline-block">Products</a>
+                                <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button">
+                                    <li>
+                                        <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mockups</button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Templates</button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Design</button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Logos</button>
+                                    </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li>
-                                <a href="#" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:text-[#FE5E15] hover:underline lg:border-0 lg:hover:text-primary-700 lg:p-0">Blog</a>
+                                <a href="/blog" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:text-[#FE5E15] hover:underline lg:border-0 lg:hover:text-primary-700 lg:p-0">Blog</a>
                             </li>
                             <li>
-                                <a href="#" class="block py-2 pr-4 pl-3 text-white p-[18px 40px 18px 40] pxborder-b border-gray-100 hover:text-[#FE5E15] hover:underline lg:border-0 lg:hover:text-primary-700 lg:p-0 hover:bg-transparent">Contact Us</a>
+                                <a href="/contact" class="block py-2 pr-4 pl-3 text-white p-[18px 40px 18px 40] pxborder-b border-gray-100 hover:text-[#FE5E15] hover:underline lg:border-0 lg:hover:text-primary-700 lg:p-0 hover:bg-transparent">Contact Us</a>
                             </li>
                         </ul>
                     </div>
