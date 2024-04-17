@@ -6,14 +6,16 @@ import Footer from '../components/Footer'
 import Achievement from '../components/Achievement'
 import Card from '../components/Card'
 import Video from '../components/Video'
+import Workers from '../components/Workers'
+import ExperienceStat from '../components/ExperienceStat'
 
 const Home = () => {
   return (
     <div>
         <NavBar />
         <Hero />
+        <ExperienceStat />
         <Achievement />
-        <Card />
         <Video />
         <Footer />
     </div>

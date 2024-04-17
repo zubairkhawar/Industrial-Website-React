@@ -18,9 +18,10 @@ const NavBar = () => {
 
       {/* NavBar Content */}
       <div className='z-10 w-full h-16 flex justify-between items-center text-white absolute top-0'>
-        <div className='flex ml-4'>
-          <h1 className='text-bold text-xl'>Haramain Abrasives</h1>
-        </div>
+      <a href="https://haramainabrasives.com" class="flex items-center">
+            <img src="logo.png" class="mr-3 h-6 sm:h-9" alt="Haramain Logo" />
+            <span class="self-center text-xl font-semibold whitespace-nowrap text-white">Haramain Abrasives</span>
+        </a>
         <ul className='hidden lg:flex px-4 space-x-6'>
           <li>
             <a href='/'>Home</a>
