@@ -7,7 +7,7 @@ const TopBar = () => {
       <div className='hidden lg:flex items-center '>
         <img src="icon-phone.png" alt="Phone Icon" className='h-6 w-auto' />
         <a href="tel:+923366401000" className='text-white text-xl px-4'>+92-336-640-1000</a>
-        <button className=''>Get A Free Quote</button>
+        <button className=''><a href='/aboutus'></a>Get A Free Quote</button>
       </div>
     </div>
   );

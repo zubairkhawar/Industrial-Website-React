@@ -11,6 +11,8 @@ import Home from './pages/Home';
 import Products from './pages/Products'
 import CoatedAbrasives from './pages/CoatedAbrasives';
 import DiamondBlades from './pages/DiamondBlades';
+import SteelGrindingDisc from './pages/SteelGrindingDisc';
+import FlapDisc from './pages/FlapDisc';
 
 function App() {
   
@@ -24,7 +26,9 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/blog" element={<Products />} />
         <Route path="/coatedabrasives" element={<CoatedAbrasives />} />
-        <Route path="/diamondcuttingblades" element={<DiamondBlades />} />
+        <Route path="/diamondblades" element={<DiamondBlades />} />
+        <Route path="/steelgrindingdisc" element={<SteelGrindingDisc />} />
+        <Route path="/flapdisc" element={<FlapDisc />} />
       </Routes>
     </Router>
   );

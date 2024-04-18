@@ -52,56 +52,56 @@ const Products = () => {
 
         <section className='h-auto w-full p-12'>
                     <div className='text-center'>
-                        <h1 className='text-7xl'>See our <strong>Products</strong></h1>
-                        <p className='text-justify text mx-28 pt-12'>Haramain Abrasives categorises in signature <em>GOLDEN PEAK</em>, <em>ATLAS</em> and <em>HORSE</em> brands. Our complete line of Best, Better, Good and Standard tier abrasive products are designed to meet the toughest standards and provide superior performance for a variety of applications. From woodworking to automotive, grinding to cutting, blending or finishing, our abrasives provide the perfect solution at every-day value pricing and performance. With our extensive experience and commitment to quality, you can trust Harmain Abrasives to get the job done right. Leverage our years of experience for a total brand solution that stands apart from the competition.</p>
+                        <h1 className='text-5xl lg:text-7xl'>See our <strong>Products</strong></h1>
+                        <p className='text-justify text lg:mx-28 pt-12'>Haramain Abrasives categorises in signature <em>GOLDEN PEAK</em>, <em>ATLAS</em> and <em>HORSE</em> brands. Our complete line of Best, Better, Good and Standard tier abrasive products are designed to meet the toughest standards and provide superior performance for a variety of applications. From woodworking to automotive, grinding to cutting, blending or finishing, our abrasives provide the perfect solution at every-day value pricing and performance. With our extensive experience and commitment to quality, you can trust Harmain Abrasives to get the job done right. Leverage our years of experience for a total brand solution that stands apart from the competition.</p>
                     </div>
         </section>
 
         <section className='h-auto w-full p-16'>
                 <div>
-                    <ul className='flex mx-28 gap-32'>
-                        <li className='relative w-1/2'>
+                    <ul className='flex flex-col lg:flex-row lg:mx-28 lg:gap-32'>
+                        <li className='relative lg:w-1/2'>
                             <a href="/coatedabrasives">
                                 <img src='roll.png' className='w-full h-auto'/>
                             </a>
                         </li>
-                        <li className='flex flex-col text-justify p-12 w-1/2'>
+                        <li className='flex flex-col text-justify lg:p-12 lg:w-1/2'>
                             <a href="/coatedabrasives" className='text-4xl text-[#FE5E15]'>Coated Abrasives</a>
                             <h3 className='text-2xl py-4 text-blue-800'>Haramain abrasives manufactures and markets a wide range of coated abrasives products.</h3>
                             <p className='text-gray-600'>Our coated abrasives fit all of your sanding needs whether you are sanding down rough surfaces or smoothing out a fine finish, from fine grits for furniture and cabinet making to coarse grits for heavy-duty sanding on decks and outdoor furniture. We offer both silicon carbide and aluminum oxide abrasives in various brands, as well as specialty sanding products such as belts and discs. Our abrasives are classified in BEST, BETTER, and GOOD performance price tiers to help you choose the right product for your specific application every time.</p>
                         </li>
                     </ul>
-                    <ul className='flex mx-28 gap-32'>
-                        <li className='relative w-1/2 order-2'>
-                            <a href="/diamondcuttingblades">
-                                <img src='2.png' className='w-full h-auto'/>
+                    <ul className='flex flex-col lg:flex-row lg:mx-28 lg:gap-32'>
+                        <li className='relative lg:w-1/2 lg:order-2'>
+                            <a href="/diamondblades">
+                                <img src='2.png' className='w-full h-auto '/>
                             </a>
                         </li>
-                        <li className='flex flex-col text-justify p-12 w-1/2 order-1'>
-                            <a href="/diamondcuttingblades" className='text-4xl text-[#FE5E15]'>Diamond Cutting Blades</a>
+                        <li className='flex flex-col text-justify lg:p-12 lg:w-1/2 order-1'>
+                            <a href="/diamondblades" className='text-4xl text-[#FE5E15]'>Diamond Cutting Blades</a>
                             <h3 className='text-2xl py-4 text-blue-800'>We offer a wide range of different diamond cutting discs in our program.</h3>
                             <p className='text-gray-600'>You can choose from discs with block segments or blades with a continuous rim. The different quality categories enable you to find the best suitable diamond disc for your application and the material to be cut. Diamond cutting tools for dry and wet cutting of many different materials, such as asphalt, concrete, brick, granite, marble, tiles, ceramic, refractory bricks and many others.</p>
                         </li>
                     </ul>
-                    <ul className='flex mx-28 gap-32'>
-                        <li className='relative w-1/2'>
+                    <ul className='flex flex-col lg:flex-row lg:mx-28 lg:gap-32'>
+                        <li className='relative lg:w-1/2'>
                             <a href="/steelgrindingdisc">
                                 <img src='3.png' className='w-full h-auto'/>
                             </a>
                         </li>
-                        <li className='flex flex-col text-justify p-12 w-1/2'>
+                        <li className='flex flex-col text-justify lg:p-12 lg:w-1/2'>
                             <a href="/steelgrindingdisc" className='text-4xl text-[#FE5E15]'>Steel & Grinding Disc</a>
                             <h3 className='text-2xl py-4 text-blue-800'>We are actively engaged in offering Grinding Wheels.</h3>
                             <p className='text-gray-600'>Used to cut steel and masonry block, offered grinding wheel is commended in the market for its excellent cutting. This grinding wheel is developed by vendor’s skillful workforce utilizing the high grade material and advanced techniques. Stainless Grinding Wheels for use on metal items from hard alloys down to softer mild steels and can be used for applications which require fast stock removal. CoreTemp Abrasives Ultra Stainless Grinding delivers 50% faster grinding so it is ideal for those larger jobs.</p>
                         </li>
                     </ul>
-                    <ul className='flex mx-28 gap-32'>
-                        <li className='relative w-1/2 order-2'>
+                    <ul className='flex flex-col lg:flex-row lg:mx-28 lg:gap-32'>
+                        <li className='relative lg:w-1/2 lg:order-2'>
                             <a href="/flapdisc">
-                                <img src='4.png' className='w-full h-auto'/>
+                                <img src='Flap-Disc-Premium2-min-removebg-preview.png' className='w-full h-auto'/>
                             </a>
                         </li>
-                        <li className='flex flex-col text-justify p-12 w-1/2 order-1'>
+                        <li className='flex flex-col text-justify lg:p-12 lg:w-1/2 order-1'>
                             <a href="/flapdisc" className='text-4xl text-[#FE5E15]'>Flap Disc</a>
                             <h3 className='text-2xl py-4 text-blue-800'>Flap discs offer right angle grinding versatility with a product that can grind and finish in a single operation.</h3>
                             <p className='text-gray-600'>The abrasive flaps are adhered to a rigid backing plate. It is the back plate that provides stability during operation with cooler cut, less vibration and smoother finish without gouging. Flap discs are well-suited to stock removal through blending applications. Flap Discs are best used for grinding, blending and finishing in one simple operation which saves you time and money on using multiple grinding tools. Haramain Abrasives Flap Discs offers the largest range of metal removal to finishing, and contour finishing, and are available in blending and finishing and high density.</p>

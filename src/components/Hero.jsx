@@ -33,8 +33,8 @@ const Hero = () => {
                         Sandpaper & Abrasive
                     </h1>
                     <h1 className='text-4xl lg:text-7xl mb-4 uppercase'>Industry</h1>
-                    <p className='text-sm lg:text-md mb-0 '>Dedicated to serving you for the past 25 years</p>
-                    <button className='mt-8 py-2 border bg-gradient-to-r from-[var(--primary-orange)] to-[var(--secondary-orange)] text-white text-lg '>Learn More {'>>'}</button>
+                    <p className='text-md lg:text-lg mb-0 '>Dedicated to serve you for the past 30 years</p>
+                    <button className='mt-8 py-2 border bg-gradient-to-r from-[var(--primary-orange)] to-[var(--secondary-orange)] text-white text-lg '><a href='/aboutus'>Learn More {'>>'}</a></button>
                 </div>
             </div>
             

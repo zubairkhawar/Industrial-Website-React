@@ -7,15 +7,21 @@ import Footer from '../components/Footer'
 const CoatedAbrasives = () => {
     const coatedAbrasivesProducts = [
         {
-          picture: '/src/assets/products/coatedabrasives/gproll1.jpg',
+        picture: '/src/assets/products/coatedabrasives/gproll1.jpg',
           name: 'Roll (Aluminium Oxide)',
           type: 'Premium Quality Aluminium Oxide Cloth ',
           brand: 'Golden Peak',
           coat: 'Close Coat',
           bonding: 'Resin Over Resin',
-          width: '50m'
+          width: '50m',
+          pictures: [
+            "/src/assets/products/coatedabrasives/gproll1.jpg",
+            "/src/assets/products/coatedabrasives/gproll1.jpg",
+            "/src/assets/products/coatedabrasives/gproll1.jpg"
+          ]
         },
         {
+
           picture: '/src/assets/products/coatedabrasives/horseroll1.jpg',
           name: 'Roll (Aluminium Oxide)',
           type: 'Best Quality Aluminium Oxide Cloth ',
@@ -128,6 +134,114 @@ const CoatedAbrasives = () => {
                     </div>
         </section>
         <ProductShow products={coatedAbrasivesProducts} />
+        <section className='w-full h-auto pb-[100px] overflow-hidden text-center p-16'>
+        <div>
+            <h2 className='text-2xl inline-block text-[#121212] mb-[30px] border-solid border-gray-900 font-normal underline'>Grit Size Available</h2>
+            <ul className='overflow-hidden text-center'>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-gray-300'></div>
+                    <p className='text-[13px] text-[#888]'>16</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-gray-300'></div>
+                    <p className='text-[13px] text-[#888]'>24</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-gray-300'></div>
+                    <p className='text-[13px] text-[#888]'>36</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-gray-300'></div>
+                    <p className='text-[13px] text-[#888]'>40</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-gray-300'></div>
+                    <p className='text-[13px] text-[#888]'>50</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-[#000] bg-[#000]'></div>
+                    <p className='text-[13px] text-[#888]'>60</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-[#000] bg-[#000]'></div>
+                    <p className='text-[13px] text-[#888]'>80</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-[#000] bg-[#000]'></div>
+                    <p className='text-[13px] text-[#888]'>100</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-[#000] bg-[#000]'></div>
+                    <p className='text-[13px] text-[#888]'>120</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-[#000] bg-[#000]'></div>
+                    <p className='text-[13px] text-[#888]'>150</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-[#000] bg-[#000]'></div>
+                    <p className='text-[13px] text-[#888]'>180</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-[#000] bg-[#000]'></div>
+                    <p className='text-[13px] text-[#888]'>220</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-[#000] bg-[#000]'></div>
+                    <p className='text-[13px] text-[#888]'>240</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-[#000] bg-[#000]'></div>
+                    <p className='text-[13px] text-[#888]'>280</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-[#000] bg-[#000]'></div>
+                    <p className='text-[13px] text-[#888]'>320</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-gray-300'></div>
+                    <p className='text-[13px] text-[#888]'>360</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-gray-300'></div>
+                    <p className='text-[13px] text-[#888]'>400</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-gray-300'></div>
+                    <p className='text-[13px] text-[#888]'>500</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-gray-300'></div>
+                    <p className='text-[13px] text-[#888]'>800</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-gray-300'></div>
+                    <p className='text-[13px] text-[#888]'>1000</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-gray-300'></div>
+                    <p className='text-[13px] text-[#888]'>1200</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-gray-300'></div>
+                    <p className='text-[13px] text-[#888]'>1500</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-gray-300'></div>
+                    <p className='text-[13px] text-[#888]'>2000</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-gray-300'></div>
+                    <p className='text-[13px] text-[#888]'>2500</p>
+                </li>
+                <li className='mr-[1%] mt-[1%] float-left min-w-[34px] w-[2.884%]'>
+                    <div className='w-full h-[36px] box-border border border-solid border-gray-300'></div>
+                    <p className='text-[13px] text-[#888]'>3000</p>
+                </li>
+            </ul>
+        </div>
+        
+    </section>
       <Footer/>
     </div>
   )

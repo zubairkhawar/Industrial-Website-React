@@ -1,5 +1,8 @@
 import React from 'react'
 import ArrowForwardIosOutlined from '@mui/icons-material/ArrowForwardIosOutlined'
+import ProductShow from '../components/ProductShow'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const DiamondBlades = () => {
   return (
@@ -42,7 +45,7 @@ const DiamondBlades = () => {
                                       <div class="flex items-center">
                                           <span class="mx-2 text-white"><ArrowForwardIosOutlined fontSize=''/></span>
                                           <div class="-m-1">
-                                              <a href="/diamondcuttingblades"
+                                              <a href="/diamondblades"
                                                   class="rounded-md p-1 text-md font-medium text-white focus:text-[#FF781D]focus:shadow hover:text-[#FF781D]">
                                                   Diamond Cutting Blades </a>
                                           </div>
@@ -61,6 +64,8 @@ const DiamondBlades = () => {
                     </div>
         </section>
         <ProductShow/>
+
+        <Footer />
       
     </div>
   )

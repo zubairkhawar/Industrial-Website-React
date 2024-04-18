@@ -8,11 +8,12 @@ import Card from '../components/Card'
 import Video from '../components/Video'
 import Workers from '../components/Workers'
 import ExperienceStat from '../components/ExperienceStat'
+import Header from '../components/Header'
 
 const Home = () => {
   return (
     <div>
-        <NavBar />
+        
         <Hero />
         <ExperienceStat />
         <Achievement />

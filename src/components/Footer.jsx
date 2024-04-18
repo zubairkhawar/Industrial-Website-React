@@ -22,33 +22,33 @@ const Footer = () => {
                 <div className='m-5'>
                     <h3 className='text-2xl'>Quick Link</h3>
                     <ul className='mt-6'>
-                        <li className='pb-3 hover:text-[#FE5E15] hover:underline'>Home</li>
-                        <li className='pb-3 hover:text-[#FE5E15] hover:underline'>About Us</li>
-                        <li className='pb-3 hover:text-[#FE5E15] hover:underline'>Products</li>
-                        <li className='pb-3 hover:text-[#FE5E15] hover:underline'>Our Team</li>
+                        <li className='pb-3 hover:text-[#FE5E15] hover:underline'><a href='/'>Home</a></li>
+                        <li className='pb-3 hover:text-[#FE5E15] hover:underline'><a href='/aboutus'>About us</a></li>
+                        <li className='pb-3 hover:text-[#FE5E15] hover:underline'><a href='/products'>Products</a></li>
+                        <li className='pb-3 hover:text-[#FE5E15] hover:underline'><a href='/aboutus'>Our Team</a></li>
                     </ul>
                 </div>
                 <div className='m-5'>
                     <ul className='mt-14'>
-                        <li className='pb-3 hover:text-[#FE5E15] hover:underline'>Contact Us</li>
-                        <li className='pb-3 hover:text-[#FE5E15] hover:underline'>Faqs</li>
-                        <li className='pb-3 hover:text-[#FE5E15] hover:underline'>Blog</li>
+                        <li className='pb-3 hover:text-[#FE5E15] hover:underline'><a href='/contactus'>Contact Us</a></li>
+                        <li className='pb-3 hover:text-[#FE5E15] hover:underline'><a href='/faqs'>Faqs</a></li>
+                        <li className='pb-3 hover:text-[#FE5E15] hover:underline'><a href='/products'>Blogs</a></li>
                     </ul>
                 </div>
                 <div className='m-5'>
                     <h3 className='text-2xl'>Our Services</h3>
                     <ul className='mt-6'>
-                        <li className='pb-3 hover:text-[#FE5E15] hover:underline transition-all duration-300'><a href=''>Coated Abrasives</a></li>
+                        <li className='pb-3 hover:text-[#FE5E15] hover:underline transition-all duration-300'><a href='/coatedabrasives'>Coated Abrasives</a></li>
                         <li className='pb-3 hover:text-[#FE5E15] hover:underline'><a href='/diamondcuttingblades'>Diamond Cutting Blades</a></li>
-                        <li className='pb-3 hover:text-[#FE5E15] hover:underline'>Steel & Grinding Disc</li>
-                        <li className='pb-3 hover:text-[#FE5E15] hover:underline'>Flap Disc</li>
+                        <li className='pb-3 hover:text-[#FE5E15] hover:underline'><a href='/steelgrindingdisc'>Steel & Grinding Disc</a></li>
+                        <li className='pb-3 hover:text-[#FE5E15] hover:underline'><a href='/flapdisc'>Flap Disc</a></li>
                     </ul>
                 </div>
                 <div className='m-5 lg:text-center'>
                     <h3 className='text-2xl mb-6'>Follow Us</h3>
-                    <a href='facebook'><FacebookOutlinedIcon fontSize='large' className='mx-1 transition duration-300 ease-in-out transform hover:scale-125' style={{ color: '#FE5E15' }} /></a>
+                    <a href='https://www.facebook.com/haramainabrasives'><FacebookOutlinedIcon fontSize='large' className='mx-1 transition duration-300 ease-in-out transform hover:scale-125' style={{ color: '#FE5E15' }} /></a>
                     <a href='instagram'><InstagramIcon fontSize='large' className='mx-1 transition duration-300 ease-in-out transform hover:scale-125' style={{ color: '#FE5E15' }}/></a>
-                    <a href='linkedin'><LinkedInIcon fontSize='large' className='mx-1 transition duration-300 ease-in-out transform hover:scale-125' style={{ color: '#FE5E15' }}/></a>
+                    <a href='https://www.linkedin.com/company/haramain-abrasive-industries/'><LinkedInIcon fontSize='large' className='mx-1 transition duration-300 ease-in-out transform hover:scale-125' style={{ color: '#FE5E15' }}/></a>
 
                 </div>
             </div>

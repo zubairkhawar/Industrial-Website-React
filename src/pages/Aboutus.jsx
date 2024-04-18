@@ -6,6 +6,7 @@ import MeetTeam from '../components/MeetTeam';
 import Workers from '../components/Workers';
 import ExperienceStat from '../components/ExperienceStat';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 
 const Aboutus = () => {
@@ -147,6 +148,8 @@ const Aboutus = () => {
         <MeetTeam />
 
         <Workers />
+
+        <Footer/>
 
 
     
