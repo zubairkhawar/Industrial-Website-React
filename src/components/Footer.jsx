@@ -32,7 +32,7 @@ const Footer = () => {
                     <ul className='mt-14'>
                         <li className='pb-3 hover:text-[#FE5E15] hover:underline'><a href='/contactus'>Contact Us</a></li>
                         <li className='pb-3 hover:text-[#FE5E15] hover:underline'><a href='/faqs'>Faqs</a></li>
-                        <li className='pb-3 hover:text-[#FE5E15] hover:underline'><a href='/products'>Blogs</a></li>
+                        <li className='pb-3 hover:text-[#FE5E15] hover:underline'><a href='/blogs'>Blogs</a></li>
                     </ul>
                 </div>
                 <div className='m-5'>

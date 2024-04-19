@@ -3,28 +3,32 @@ import React from "react";
 const Card = () => {
   return (
     <>
-      <section className="bg-gray-2 pb-10 pt-20 bg-[#161515] lg:pb-20 lg:pt-[120px]">
-        <div className="container">
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <section className="bg-gray-2 pb-10 pt-20 bg-[#161515] lg:pb-10 lg:pt-[80px]">
+        <div className="container lg:ml-24">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4">
             <SingleCard
-              image="https://i.ibb.co/r2zns1m/image-01.jpg"
-              CardTitle="50+ Best creative website themes & templates"
-              titleHref="/#"
-              btnHref="/#"
-              CardDescription="Lorem ipsum dolor sit amet pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit."
-              Button="View Details"
+              image="coated1.jpg"
+              CardTitle="Coated Abrasives"
+              titleHref="/coatedabrasives"
+              CardDescription="Discover our versatile range of coated abrasives, from woodworking to metalworking, our coated abrasives deliver precision and durability to enhance your work efficiency."
             />
             <SingleCard
-              image="https://i.ibb.co/0nbbWM9/image-02-1.jpg"
-              CardTitle="Creative Card Component designs graphic elements"
-              CardDescription="Lorem ipsum dolor sit amet pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit."
-              Button="View Details"
+              image="diamond1.jpg"
+              CardTitle="Diamond Cutting Blades"
+              titleHref="/diamondcuttingblades"
+              CardDescription="Explore our premium diamond cutting blades, engineered to deliver precise and clean cuts in various materials, including concrete, asphalt, stone, and more."
             />
             <SingleCard
-              image="https://i.ibb.co/dL9fH7N/image-03-1.jpg"
-              CardTitle="The ultimate UX and UI guide to card design"
-              CardDescription="Lorem ipsum dolor sit amet pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit."
-              Button="View Details"
+              image="steel.jpg"
+              CardTitle="Steel & Grinding Disc"
+              titleHref="/steelgrindingdisc"
+              CardDescription="Whether you're working with steel, stainless steel, or other metals, our discs deliver consistent performance and exceptional results."
+            />
+            <SingleCard
+              image="flap1.jpg"
+              CardTitle="Flap Disc"
+              titleHref="/flapdisc"
+              CardDescription="Experience superior grinding and finishing with our flap discs, designed to tackle a variety of surface preparation and blending tasks with ease."
             />
           </div>
         </div>
@@ -37,18 +41,16 @@ export default Card;
 
 const SingleCard = ({
   image,
-  Button,
   CardDescription,
   CardTitle,
   titleHref,
-  btnHref,
 }) => {
   return (
     <>
       {/*  */}
-      <div className="mb-10 overflow-hidden rounded-lg bg-[white] shadow-1 duration-300 hover:shadow-3 dark:bg-dark-2 dark:shadow-card dark:hover:shadow-3">
-        <img src={image} alt="" className="w-full" />
-        <div className="p-8 text-center sm:p-9 md:p-7 xl:p-9">
+      <div className="mb-10 mx-4 overflow-hidden rounded-lg bg-[white] shadow-1 duration-300 hover:shadow-3 ">
+        <img src={image} alt="haramain products" className="w-full h-[220px]" />
+        <div className="p-6 text-center sm:p-9 md:p-7 xl:p-6">
           <h3>
             <a
               href={titleHref ? titleHref : "/#"}
@@ -57,18 +59,11 @@ const SingleCard = ({
               {CardTitle}
             </a>
           </h3>
-          <p className="mb-7 text-base leading-relaxed text-body-color dark:text-dark-6">
+          <p className="text-base leading-relaxed">
             {CardDescription}
           </p>
 
-          {Button && (
-            <a
-              href={btnHref ? btnHref : "#"}
-              className="inline-block rounded-full border border-gray-3 px-7 py-2 text-base font-medium text-body-color transition hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-dark-6"
-            >
-              {Button}
-            </a>
-          )}
+          
         </div>
       </div>
       {/*  */}

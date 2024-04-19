@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 const ProductShow = ({ products }) => {
     const [showZoomedImage, setShowZoomedImage] = useState(false);
     const [zoomedImageUrl, setZoomedImageUrl] = useState('');
+    const zoomedImageRef = useRef(null);
 
     const openZoomedImage = (imageUrl) => {
         setZoomedImageUrl(imageUrl);
@@ -13,10 +14,20 @@ const ProductShow = ({ products }) => {
         setShowZoomedImage(false);
     };
 
+    const handleOverlayClick = (event) => {
+        if (event.target === zoomedImageRef.current) {
+            closeZoomedImage();
+        }
+    };
+
     return (
         <div className="font-sans">
             {showZoomedImage && (
-                <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50 z-50">
+                <div
+                    ref={zoomedImageRef}
+                    className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50 z-50"
+                    onClick={handleOverlayClick}
+                >
                     <div className="bg-white rounded-sm sm:w-3/4 md:w-1/2 lg:w-2/3 xl:w-3/5 relative">
                         <div
                             className="absolute top-1 right-2 lg:m-3 lg:p-2 text-gray-600 hover:text-gray-800"

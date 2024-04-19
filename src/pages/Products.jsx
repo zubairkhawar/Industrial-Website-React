@@ -73,12 +73,12 @@ const Products = () => {
                     </ul>
                     <ul className='flex flex-col lg:flex-row lg:mx-28 lg:gap-32'>
                         <li className='relative lg:w-1/2 lg:order-2'>
-                            <a href="/diamondblades">
+                            <a href="/diamondcuttingblades">
                                 <img src='2.png' className='w-full h-auto '/>
                             </a>
                         </li>
                         <li className='flex flex-col text-justify lg:p-12 lg:w-1/2 order-1'>
-                            <a href="/diamondblades" className='text-4xl text-[#FE5E15]'>Diamond Cutting Blades</a>
+                            <a href="/diamondcuttingblades" className='text-4xl text-[#FE5E15]'>Diamond Cutting Blades</a>
                             <h3 className='text-2xl py-4 text-blue-800'>We offer a wide range of different diamond cutting discs in our program.</h3>
                             <p className='text-gray-600'>You can choose from discs with block segments or blades with a continuous rim. The different quality categories enable you to find the best suitable diamond disc for your application and the material to be cut. Diamond cutting tools for dry and wet cutting of many different materials, such as asphalt, concrete, brick, granite, marble, tiles, ceramic, refractory bricks and many others.</p>
                         </li>

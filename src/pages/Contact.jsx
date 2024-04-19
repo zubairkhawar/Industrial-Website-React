@@ -1,15 +1,62 @@
 import React, { useState } from 'react';
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 import ArrowForwardIosOutlined from '@mui/icons-material/ArrowForwardIosOutlined';
+import { useForm, ValidationError } from '@formspree/react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+function ContactForm() {
+  const [state, handleSubmit] = useForm("xvoedzev");
+  if (state.succeeded) {
+      return <p className='lg:text-6xl text-4xl text-center text-[#FE5E15]'>Thanks <br/>For <br/>Contacting!</p>;
+  }
+  return (
+  <form onSubmit={handleSubmit}>
+    <div className="relative mb-6" data-te-input-wrapper-init>
+         <input id="email" type="email"  name="email" className="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
+         />
+         <label
+           className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none "
+           htmlFor="email"
+         >
+           Email address
+         </label>
+         <ValidationError prefix="Email" field="email" errors={state.errors}/>
+      </div>
+  <div className="relative mb-6" data-te-input-wrapper-init>
+                <textarea
+                  className="peer block min-h-[auto] lg:h-[250px] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
+                  id="exampleFormControlTextarea1"
+                  rows="3" name='message'
+                ></textarea>
+                <label
+                  htmlFor="exampleFormControlTextarea1"
+                  className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none "
+                >
+                  Message
+                </label>
+                <ValidationError prefix="Message" field="message"errors={state.errors}/>
+              </div>
+  <div className="mb-6 flex justify-start items-center">
+                <input
+                  type="checkbox"
+                  className="peer h-4 w-4 text-primary rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+                  id="exampleCheck1"
+                />
+                <label
+                  className="ml-2 text-neutral-700"
+                  htmlFor="exampleCheck1"
+                >
+                  I agree to the Privacy Policy
+                </label>
+              </div>
+  <button type="submit" disabled={state.submitting} className="bg-primary hover:bg-opacity-90 text-white w-[260px] lg:w-[400px]  font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-all duration-200 ease-linear">Send</button>
+    </form>
+  );
+}
 
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm("xvoedzev");
-  if (state.succeeded) {
-      return <p>Thanks for contacting!</p>;
-  }
+  
   return (
     <div>
         <Header />
@@ -89,69 +136,7 @@ const Contact = () => {
           <div className="block lg:h-[600px] rounded-lg bg-[#F6F6F6] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px] border border-gray-300">
             <div className="flex flex-wrap">
               <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
-                <form>
-                  <div className="relative mb-6" data-te-input-wrapper-init>
-                    <input
-                      type="text"
-                      className="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
-                      id="exampleInput90"
-                      placeholder="Name"
-                    />
-                    <label
-                      className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none "
-                      htmlFor="exampleInput90"
-                    >
-                      Name
-                    </label>
-                  </div>
-                  <div className="relative mb-6" data-te-input-wrapper-init>
-                    <input
-                      type="email"
-                      className="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
-                      id="exampleInput91"
-                      placeholder="Email address"
-                    />
-                    <label
-                      className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none "
-                      htmlFor="exampleInput91"
-                    >
-                      Email address
-                    </label>
-                  </div>
-                  <div className="relative mb-6" data-te-input-wrapper-init>
-                    <textarea
-                      className="peer block min-h-[auto] lg:h-[250px] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
-                      id="exampleFormControlTextarea1"
-                      rows="3"
-                      placeholder="Message"
-                    ></textarea>
-                    <label
-                      htmlFor="exampleFormControlTextarea1"
-                      className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none "
-                    >
-                      Message
-                    </label>
-                  </div>
-                  <div className="mb-6 flex justify-start items-center">
-                    <input
-                      type="checkbox"
-                      className="peer h-4 w-4 text-primary rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
-                      id="exampleCheck1"
-                    />
-                    <label
-                      className="ml-2 text-neutral-700"
-                      htmlFor="exampleCheck1"
-                    >
-                      I agree to the Privacy Policy
-                    </label>
-                  </div>
-                  <button
-                    type="submit"
-                    className="bg-primary hover:bg-opacity-90 text-white w-[260px] lg:w-[400px]  font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-all duration-200 ease-linear"
-                  >
-                    Send
-                  </button>
-                </form>
+              <ContactForm/>
               </div>
               <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
                 <div className="flex flex-wrap">
@@ -220,6 +205,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
+        
       </section>
     <Footer/>
     </div>

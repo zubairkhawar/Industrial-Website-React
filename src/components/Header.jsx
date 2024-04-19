@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Search from '@mui/icons-material/Search';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const Header = () => {
     const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -11,6 +10,7 @@ const Header = () => {
         setIsMobileNavOpen(!isMobileNavOpen);
       };
   return (
+    
     <nav class=" border-gray-200 px-4 lg:px-6 py-2.5 bg-[#161515]">
     <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl h-16">
         <a href="https://haramainabrasives.com" class="flex items-center">
@@ -35,7 +35,7 @@ const Header = () => {
                     
                 </li>
                 <li>
-                    <a href="/blog" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:text-[#FE5E15] hover:underline lg:border-0 lg:hover:text-primary-700 lg:p-0">Blog</a>
+                    <a href="/blogs" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:text-[#FE5E15] hover:underline lg:border-0 lg:hover:text-primary-700 lg:p-0">Blogs</a>
                 </li>
                 <li>
                     <a href="/contactus" class="block py-2 pr-4 pl-3 text-white p-[18px 40px 18px 40] pxborder-b border-gray-100 hover:text-[#FE5E15] hover:underline lg:border-0 lg:hover:text-primary-700 lg:p-0 hover:bg-transparent">Contact Us</a>

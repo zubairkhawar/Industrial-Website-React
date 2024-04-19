@@ -1,22 +1,15 @@
 import React from 'react';
-import TopBar from './TopBar';
 import NavBar from './NavBar';
 import Divider from '@mui/material/Divider';
-import Footer from './Footer';
+
 
 const Hero = () => {
-    const style = {
-        py: 0,
-        width: '80%',
-        maxWidth: 360,
-        borderRadius: 2,
-        border: '0.5px solid',
-        borderColor: 'divider',
-        backgroundColor: 'bg-gray-800',
-    };
-
     return (
         <div className='relative w-full'>
+            <div className='w-full h-[1px] bg-gray-300 p-0 mx-0 '>
+                <Divider/>
+            </div>
+
             {/* NavBar Component */}
             <NavBar />
 

@@ -55,7 +55,7 @@ const NavBar = () => {
                         </div>  
                     </li>
                     <li>
-                        <a href="/products" className="px-2 py-2 hover:text-[#FF781D] hover:underline">Blogs</a>
+                        <a href="/blogs" className="px-2 py-2 hover:text-[#FF781D] hover:underline">Blogs</a>
                     </li>
                     <li>
                         <a href="/contactus" className="px-2 py-2 hover:text-[#FF781D] hover:underline">Contact Us</a>
@@ -111,7 +111,7 @@ const NavBar = () => {
                             </details>
                         </li>
                         <li className='p-2 font-medium'>
-                            <a href="/products" className="text-3xl pl-4 md:pl-0">Blog</a>        
+                            <a href="/blogs" className="text-3xl pl-4 md:pl-0">Blogs</a>        
                         </li>
                         <li className='p-2 font-medium'>
                             <a href="/contact" className="text-3xl pl-4 md:pl-0">Contact Us</a>        
